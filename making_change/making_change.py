@@ -4,8 +4,10 @@ import sys
 
 def making_change(amount, denominations):
   # Your code here
-
-  pass
+  total = 0
+  for i in denominations:
+    total += making_change(amount, i)
+  return total
 
 
 if __name__ == "__main__":
